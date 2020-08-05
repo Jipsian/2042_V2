@@ -1,0 +1,232 @@
+body {
+	background-color: #ffcc00;
+}
+
+h1 {
+	font-family: 'Bungee Inline', cursive;
+	font-size: 58px;
+	margin: 0;
+}
+#win {
+	color: green;
+	display: none;
+	font-family: 'Bungee Inline', cursive;
+	font-size: 35px;
+	left: 60.5%;
+	position: absolute;
+	top: 2%;
+}
+
+#win span {
+	animation: BGzoom 2s linear infinite;
+	display: block;
+}
+
+#loose span {
+	animation: MGzoom 2s linear infinite;
+	display: block;
+}
+
+.replay {
+	float: right;
+	background-color: transparent;
+	border: none;
+	border-radius: 2px;
+	color: #990000;
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	font-weight: 900;
+	height: 30px;
+}
+
+@keyframes BGzoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+       transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes MGzoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+       transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#loose {
+	color: #990000;
+	display: none;
+	font-family: 'Bungee Inline', cursive;
+	font-size: 35px;
+	left: 51.75%;
+	position: absolute;
+	top: 1%;
+  
+}
+
+#head {
+	font-family: 'Bungee Inline', cursive;
+	margin: 0 auto;
+	width: 480px;	
+}
+
+#createGame {
+	height: 20px;
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+#newGame {
+	background-color: #ffff33;
+	border: 2px solid #000;
+	border-radius: 2px;
+	color: #000;
+	float: left;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	font-weight: 900;
+	height: 30px;
+    transition: background 0.8s;	
+}
+
+#newGame:hover {
+	background-color: #ffff66;
+}
+
+#newGame:active {
+	background-color: #ffff66;
+	background-size: 100%;
+	transition: background 0s;
+}
+
+#chooseGame {
+	float: right;
+}
+
+#chooseGame:active {
+    transition: background 0s;
+}
+
+select {
+	background-color: #ffff33;
+	border: 2px solid #000;
+	border-radius: 2px;
+	color: #000;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	height: 30px;	
+	margin-left: 10px;
+	padding-left: 10px;
+	padding-right: 7px;
+	transition: background 0.8s;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select:hover {
+	background-color: #ffff66;
+}
+
+select:active {
+	background-color: #ffff66;
+	background-size: 100%;
+	transition: background 0s;
+}
+
+select option {
+	background-color: #fff;
+	color: #fff;
+}
+
+#score {
+	display: inline;
+	width: 50%;
+}
+
+#bestScore {
+	display: inline;
+	float: right;
+}
+
+#score span {
+	color: #990000;
+	margin-left: 20px;
+	width: 50%;
+}
+
+#bestScore span {
+	color: #990000;
+	float: right;
+	margin-left: 20px;
+}
+
+#container {
+	border: none;
+	font-family: 'Raleway', sans-serif;
+	font-size: 0;
+	height: 480px;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	top: 10px;
+	width: 480px;
+}
+
+.grid {
+	border: none;
+	display: inline-block;
+	margin: 0;
+	outline: 2.5px solid #ffcc00;
+	padding: 0;
+	position: relative;
+}
+
+.grid span {
+	color: #000;
+	font-weight: bold;
+	height: auto;
+	position: absolute;
+	text-align: center;
+	top: 35%;
+	transition: all 1s;
+}
+
+#undo {
+	cursor: grab;
+	margin-top: 5px;
+}
+
+#undo i {
+	color: #990000;
+	margin-right: 10px;
+}
+
+select:focus {
+ outline: none;
+ -moz-outline: none;
+}
+option:focus {
+ outline: none;
+ -moz-outline: none;
+}
+button:focus {
+ outline: none;
+ -moz-outline: none;
+}

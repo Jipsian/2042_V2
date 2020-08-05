@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>2048 - Sylvain</title>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="images/logo.png">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Raleway:300,400,500,600,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div id="loose">
+			<span>You lose ...</span>
+			<button class="replay">Replay</button>
+		</div>
+		<div id="win">
+			<span>Victory !</span>
+			<button class="replay">Replay</button>
+		</div>
+		<div id="head">
+			<h1>2O48</h1>
+			<div id="createGame">
+				<button id="newGame">New game</button>
+				<div id="chooseGame">
+					<label>Grid size :</label>		
+					<select id="select">
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+					</select>		
+				</div>
+			</div>
+			<div id="score">Score<span></span></div>	
+			<div id="bestScore">Best score<span></span></div>	
+			<div id="undo"><i class="material-icons">undo</i>Back to last move</div>
+		</div>
+		<div id="container"></div>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
+
